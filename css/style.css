@@ -1,0 +1,248 @@
+/* =====***** common css starts *****===== */
+:root {
+  --open-Sans: "Open Sans", sans-serif;
+  --oswald: "Oswald", sans-serif;
+  --anton: "Anton", sans-serif;
+  --nunito: "Nunito", sans-serif;
+  --bgcolor: #160036;
+  --h1color: #feb702;
+  --brandcolor: #6318d1;
+  --pcolor: #ffffff;
+  --hovercolor: #f935d6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: black;
+}
+
+/* =====***** common css ends *****===== */
+
+/* =====***** navbar css starts *****===== */
+
+.navbar {
+  z-index: 9999999999;
+  background: var(--bgcolor);
+}
+
+.navbar .navbar-brand img {
+  background: cover;
+}
+
+.navbar .navbar-nav:first-of-type {
+  padding-left: 170px;
+}
+
+.navbar .navbar-nav .nav-item {
+  padding-top: 60px;
+  align-items: center;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: var(--brandcolor);
+  font-size: 20px;
+  font-family: var(--nunito);
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 50px;
+  padding-right: 50px;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--hovercolor);
+}
+
+.navbar .navbar-nav .nav-item .signup {
+  padding-right: 0;
+  padding-left: 0;
+  padding: 0 35px;
+  margin-left: 40px;
+  background: var(--hovercolor);
+  color: white;
+  font-family: var(--anton);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 6px #661355;
+}
+
+.navbar .navbar-nav .nav-item .login {
+  padding-right: 0;
+  padding-left: 0;
+  padding: 0 35px;
+  background: var(--brandcolor);
+  color: white;
+  font-family: var(--anton);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 50px;
+  border-radius: 10px;
+  margin-left: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 6px #3a0090;
+}
+
+/* -----***** navbar css ends *****----- */
+
+/* -----***** banner css starts *****----- */
+#banner-bg {
+  position: relative;
+  justify-content: space-btweem;
+  align-items: center;
+  padding-top: 45px;
+  background: #150035;
+  padding-bottom: 370px;
+}
+
+#banner-bg .banner-img {
+  background-size: cover;
+}
+
+#banner-bg .banner-img img {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+}
+
+#banner-bg .banner-text h4 {
+  color: white;
+  font-size: 20px;
+  font-family: var(--nunito);
+  font-weight: 400;
+  line-height: 50px;
+  margin-bottom: 0 !important;
+}
+
+#banner-bg .banner-text .banner-777 {
+  font-size: 331px;
+  color: #fcb100;
+  font-family: var(--anton);
+  font-weight: 700;
+  line-height: 50px;
+  padding-top: 120px;
+}
+
+#banner-bg .banner-text p {
+  color: white;
+  font-size: 16px;
+  font-family: var(--nunito);
+  font-weight: 400;
+  padding-top: 120px;
+}
+
+#banner-bg .banner-text a {
+  padding-right: 0;
+  padding-left: 0;
+  padding: 10px 35px;
+  background: var(--brandcolor);
+  color: white;
+  font-family: var(--anton);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 6px #2c0c5d;
+}
+
+/* -----***** banner css ends *****----- */
+
+/* -----***** counter css starts *****----- */
+
+#counter-bg {
+  position: relative;
+}
+
+#counter-bg .counting {
+  position: absolute;
+  top: -50%;
+  left: 0;
+}
+
+#counter-bg .counter-item {
+  background: #6619d2;
+  text-align: center;
+}
+
+#counter-bg .counter-item h6 {
+  color: #fcb100;
+  font-size: 50px;
+  font-family: var(--oswald);
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 0 !important;
+  padding-top: 90px;
+}
+
+#counter-bg .counter-item p {
+  color: white;
+  font-size: 50px;
+  font-family: var(--oswald);
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 32px;
+  margin-bottom: 0 !important;
+  padding-top: 25px;
+}
+
+#counter-bg .counter-item p:last-of-type {
+  font-size: 16px;
+  font-family: var(--nunito);
+  font-weight: 400;
+  line-height: 50px;
+  margin-bottom: 0 !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#counter-bg .item-1 {
+  -webkit-clip-path: polygon(0 16%, 100% 10%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 16%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+#counter-bg .item-2 {
+  -webkit-clip-path: polygon(0 10%, 100% 4%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 4%, 100% 100%, 0% 100%);
+}
+
+#counter-bg .item-3 {
+  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* -----***** banner css ends *****----- */

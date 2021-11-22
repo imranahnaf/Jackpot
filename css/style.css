@@ -163,6 +163,7 @@ a {
   font-size: 20px;
   font-family: var(--nunito);
   font-weight: 400;
+  text-transform: capitalize;
   line-height: 50px;
   margin-bottom: 0 !important;
 }
@@ -210,7 +211,7 @@ a {
 }
 
 #banner-bg .banner-text a:hover {
-  background: none;
+  background: black;
   border: 2px solid purple;
   box-shadow: none;
 }
@@ -383,8 +384,8 @@ a {
 
 /* -----***** games about css starts *****----- */
 #games-about {
-  padding-top: 60px;
-  padding-bottom: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   background: var(--bgcolor);
 }
 
@@ -451,7 +452,118 @@ a {
 /* -----***** games about css ends *****----- */
 
 /* -----***** praicing plan css starts *****----- */
-#pricing {
+#pricing-bg .pricing-head h4 {
+  font-size: 48px;
+  line-height: 50px;
+  color: var(--h1color);
+  font-family: var(--anton);
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  margin-bottom: 85px;
+}
+
+#pricing-bg .pricing-item .item {
+  background: var(--brandcolor);
+  text-align: center;
+  position: relative;
+}
+
+#pricing-bg .pricing-item .item .box-head {
+  background: var(--hovercolor);
+  position: absolute;
+  top: -60px;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+
+#pricing-bg .pricing-item .item:hover .box-head {
+  visibility: visible;
+  opacity: 1;
+}
+
+#pricing-bg .pricing-item .item .box-head h5 {
+  font-size: 18px;
+  line-height: 50px;
+  font-family: var(--oswald);
+  font-weight: 500;
+  text-transform: capitalize;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#pricing-bg .pricing-item .item .price {
+  padding-top: 70px;
+}
+
+#pricing-bg .pricing-item .item .price h4 {
+  font-size: 32px;
+  line-height: 50px;
+  color: white;
+  font-family: var(--anton);
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  margin-bottom: 50px;
+}
+
+#pricing-bg .pricing-item .item .price p:first-of-type {
+  font-size: 50px;
+  line-height: auto;
+  color: white;
+  font-family: var(--open-Sans);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+#pricing-bg .pricing-item .item .price p:last-of-type {
+  font-size: 16px;
+  line-height: 40px;
+  color: #ece9e9;
+  font-family: var(--open-Sans);
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+#pricing-bg .pricing-item .item .price-details p {
+  font-size: 16px;
+  line-height: 40px;
+  color: white;
+  font-family: var(--open-Sans);
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+#pricing-bg .pricing-item .item .box-footer a {
+  font-size: 24px;
+  font-family: var(--oswald);
+  font-weight: 500;
+  text-transform: capitalize;
+  color: white;
+  padding: 15px 30px;
+  background: linear-gradient(#f566dd, #8d0c71);
+  background: var(--hovercolor);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#pricing-bg .pricing-item .item .box-footer {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* -----***** praicing plan css ends *****----- */

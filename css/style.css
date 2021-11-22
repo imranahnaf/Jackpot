@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: #000;
+}
+
 /* =====***** common css ends *****===== */
 
 /* =====***** navbar css starts *****===== */
@@ -66,7 +70,7 @@ a {
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: var(--hovercolor);
+  color: #f935d6;
 }
 
 .navbar .navbar-nav .nav-item .signup {
@@ -87,7 +91,7 @@ a {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   box-shadow: 0px 6px #661355;
-  text-replace: all linear 0.4s;
+  transition: all linear 0.4s;
   border: 2px solid #661355;
   transition: all linear 0.4s;
   -webkit-transition: all linear 0.4s;
@@ -140,22 +144,11 @@ a {
 
 /* -----***** banner css starts *****----- */
 #banner-bg {
-  position: relative;
   justify-content: space-btweem;
   align-items: center;
   padding-top: 45px;
   background: #150035;
-  padding-bottom: 400px;
-}
-
-#banner-bg .banner-img {
-  background-size: cover;
-}
-
-#banner-bg .banner-img img {
-  position: absolute;
-  top: 50px;
-  left: -20px;
+  padding-bottom: 250px;
 }
 
 #banner-bg .banner-text h4 {
@@ -386,6 +379,7 @@ a {
 #games-about {
   margin-top: 100px;
   margin-bottom: 100px;
+  padding-top: 100px;
   background: var(--bgcolor);
 }
 

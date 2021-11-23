@@ -148,7 +148,8 @@ body {
   align-items: center;
   padding-top: 45px;
   background: #150035;
-  padding-bottom: 250px;
+  padding-bottom: 240px;
+  position: relative;
 }
 
 #banner-bg .banner-text h4 {
@@ -213,25 +214,31 @@ body {
 
 /* -----***** counter css starts *****----- */
 
-#counter-bg {
-  margin-bottom: 60px;
+#counter-content {
+  position: absolute;
+  bottom: -150px;
 }
 
-#counter-bg .counter-content {
-  position: relative;
-}
-
-#counter-bg .counter-item {
+#counter-content .counter-item {
   background: #6619d2;
   text-align: center;
-  position: absolute;
-  top: -180px;
-  left: 0;
   -webkit-clip-path: polygon(0 12%, 100% 1%, 100% 100%, 0% 100%);
   clip-path: polygon(0 12%, 100% 1%, 100% 100%, 0% 100%);
 }
 
-#counter-bg .counter-item h6 {
+#counter-content .counter-item .item {
+  text-align: center;
+}
+
+#counter-content .item-1 {
+  box-shadow: 5px 5px 25px 5px #000000;
+}
+
+#counter-content .item-2 {
+  box-shadow: 5px 5px 25px 5px #000000;
+}
+
+#counter-content .counter-item h6 {
   color: #fcb100;
   font-size: 50px;
   font-family: var(--oswald);
@@ -241,7 +248,7 @@ body {
   padding-top: 90px;
 }
 
-#counter-bg .counter-item p {
+#counter-content .counter-item .item p {
   color: white;
   font-size: 50px;
   font-family: var(--oswald);
@@ -252,35 +259,21 @@ body {
   padding-top: 25px;
 }
 
-#counter-bg .counter-item p:last-of-type {
+#counter-content .counter-item p:last-of-type {
   font-size: 16px;
   font-family: var(--nunito);
   font-weight: 400;
   line-height: 50px;
   margin-bottom: 0 !important;
   padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-#counter-bg .item-1 {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-#counter-bg .item-2 {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-#counter-bg .item-3 {
-  padding-right: 70px;
+  padding-bottom: 30px;
 }
 
 /* -----***** counter css ends *****----- */
 
 /* -----***** games css starts *****----- */
 #games-bg {
-  padding-top: 100px;
+  padding-top: 220px;
 }
 
 #games-bg .games-heading {
@@ -317,17 +310,18 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: -100%;
   left: 0;
+  top: -100%;
   background: rgba(21, 0, 53, 85%);
-  flex-wrap: nowrap;
-  text-align: center;
-  align-items: center;
   transition: all linear 0.4s;
   -webkit-transition: all linear 0.4s;
   -moz-transition: all linear 0.4s;
   -ms-transition: all linear 0.4s;
   -o-transition: all linear 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #games-bg .games-img .item:hover .overlay {
@@ -335,18 +329,16 @@ body {
   left: 0;
 }
 
-#games-bg .games-img .overlay p {
+#games-bg .games-img .overlay .text p {
   font-size: 24px;
   line-height: 50px;
   color: white;
   font-family: var(--anton);
   font-weight: 400;
-  text-transform: capitalize;
-  padding-top: 50%;
-  padding-top: 165px;
+  text-transform: capitalpaize;
 }
 
-#games-bg .games-img .overlay a {
+#games-bg .games-img .overlay .text a {
   padding-right: 0;
   padding-left: 0;
   padding: 10px 35px;
@@ -367,7 +359,7 @@ body {
   margin-top: 50px !important;
 }
 
-#games-bg .games-img .overlay a:hover {
+#games-bg .games-img .overlay .text a:hover {
   color: white;
   background: black;
   border: 2px solid purple;
@@ -461,6 +453,11 @@ body {
   background: var(--brandcolor);
   text-align: center;
   position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 #pricing-bg .pricing-item .item .box-head {
@@ -475,6 +472,8 @@ body {
   -moz-transition: all linear 0.4s;
   -ms-transition: all linear 0.4s;
   -o-transition: all linear 0.4s;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #pricing-bg .pricing-item .item:hover .box-head {
@@ -527,6 +526,10 @@ body {
   margin-bottom: 0;
 }
 
+#pricing-bg .pricing-item .item .price-details {
+  padding-bottom: 40px;
+}
+
 #pricing-bg .pricing-item .item .price-details p {
   font-size: 16px;
   line-height: 40px;
@@ -535,6 +538,13 @@ body {
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 0;
+}
+
+#pricing-bg .pricing-item .item .box-footer {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #pricing-bg .pricing-item .item .box-footer a {
@@ -551,13 +561,6 @@ body {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-}
-
-#pricing-bg .pricing-item .item .box-footer {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 /* -----***** praicing plan css ends *****----- */

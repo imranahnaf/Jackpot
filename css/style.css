@@ -70,7 +70,7 @@ body {
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: #f935d6;
+  color: var(--hovercolor) !important;
 }
 
 .navbar .navbar-nav .nav-item .signup {
@@ -216,7 +216,7 @@ body {
 
 #counter-content {
   position: absolute;
-  bottom: -150px;
+  bottom: -130px;
 }
 
 #counter-content .counter-item {
@@ -273,7 +273,7 @@ body {
 
 /* -----***** games css starts *****----- */
 #games-bg {
-  padding-top: 220px;
+  padding-top: 200px;
 }
 
 #games-bg .games-heading {
@@ -438,6 +438,7 @@ body {
 /* -----***** games about css ends *****----- */
 
 /* -----***** praicing plan css starts *****----- */
+
 #pricing-bg .pricing-head h4 {
   font-size: 48px;
   line-height: 50px;
@@ -446,10 +447,13 @@ body {
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 0;
-  margin-bottom: 85px;
+  margin-bottom: 115px;
+  text-align: center;
 }
 
 #pricing-bg .pricing-item .item {
+  width: 32%;
+  margin-right: 2%;
   background: var(--brandcolor);
   text-align: center;
   position: relative;
@@ -458,6 +462,15 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+#pricing-bg .pricing-item .item:last-child {
+  margin-right: 0%;
+}
+
+#pricing-bg .pricing-item .item:hover .box-head {
+  visibility: visible;
+  opacity: 1;
 }
 
 #pricing-bg .pricing-item .item .box-head {
@@ -474,22 +487,18 @@ body {
   -o-transition: all linear 0.4s;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
-
-#pricing-bg .pricing-item .item:hover .box-head {
-  visibility: visible;
-  opacity: 1;
+  box-shadow: 0px 5px rgba(180, 45, 151, 0.75);
 }
 
 #pricing-bg .pricing-item .item .box-head h5 {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 50px;
-  font-family: var(--oswald);
+  font-family: var(--anton);
   font-weight: 500;
   text-transform: capitalize;
   color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #pricing-bg .pricing-item .item .price {
@@ -500,20 +509,20 @@ body {
   font-size: 32px;
   line-height: 50px;
   color: white;
-  font-family: var(--anton);
-  font-weight: 400;
+  font-family: var(--oswald);
+  font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #pricing-bg .pricing-item .item .price p:first-of-type {
   font-size: 50px;
-  line-height: auto;
   color: white;
   font-family: var(--open-Sans);
-  font-weight: 400;
+  font-weight: 700;
   text-transform: capitalize;
+  margin-bottom: 0 !important;
 }
 
 #pricing-bg .pricing-item .item .price p:last-of-type {
@@ -524,6 +533,18 @@ body {
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+#pricing-bg .pricing-item .item .price p:last-of-type::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #353535;
+  position: absolute;
+  top: 60px;
+  left: 0;
 }
 
 #pricing-bg .pricing-item .item .price-details {
@@ -550,17 +571,186 @@ body {
 #pricing-bg .pricing-item .item .box-footer a {
   font-size: 24px;
   font-family: var(--oswald);
-  font-weight: 500;
+  font-weight: 700;
   text-transform: capitalize;
   color: white;
   padding: 15px 30px;
-  background: linear-gradient(#f566dd, #8d0c71);
-  background: var(--hovercolor);
+  background: linear-gradient(#b159f8, #7b0ead);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  box-shadow: 0px 6px rgba(95, 20, 206, 75%);
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
 }
 
+#pricing-bg .pricing-item .item .box-footer a:hover {
+  background: var(--hovercolor);
+  box-shadow: 0px 6px rgba(218, 45, 180, 75%);
+}
 /* -----***** praicing plan css ends *****----- */
+
+
+/* -----***** routine-bg  css starts *****----- */
+#routine-bg {
+  background: var(--bgcolor);
+  margin-top: 115px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#routine-bg .routine-item .item .routine-head {
+  position: relative;
+}
+
+#routine-bg .routine-item .item .routine-head:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+
+#routine-bg .routine-item .item .routine-head h4 {
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--h1color);
+  font-family: var(--anton);
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  text-align: left;
+  padding-bottom: 80px;
+}
+
+#routine-bg .item .box-item {
+  margin-top: 20px;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  padding-top: 20px;
+  border: 1px solid white;
+  border: none;
+}
+
+#routine-bg .item .box-item:hover {
+  border: 1px solid var(--h1color);
+}
+
+#routine-bg .item .box-item label {
+  color: white;
+  font-size: 18px;
+  font-family: var(--open-sans);
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+
+#routine-bg .item .box-item p {
+  color: white;
+  font-size: 18px;
+  font-family: var(--open-sans);
+  font-weight: 400;
+  padding: 0 40px 0 20px;
+}
+
+/* -----***** routine-bg  css ends *****----- */
+
+/* -----***** offer css starts *****----- */
+#offer-bg {
+  background: linear-gradient(#9748f7, #8032e6);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#offer-bg .offer-item h4 {
+  font-size: 24px;
+  line-height: 40px;
+  color: white;
+  font-family: var(--anton);
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+#offer-bg .offer-item form input {
+  border: none;
+  border: 1px solid #353535;
+  background: transparent;
+}
+
+#offer-bg .offer-item form {
+  white-space: none;
+}
+
+#offer-bg .offer-item form input {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#offer-bg .offer-item form button {
+  border: none;
+  border: 1px solid #353535;
+  background: transparent;
+}
+
+#offer-bg .offer-item form button i {
+  padding: 8px;
+  font-size: 16px;
+  color: #353535;
+}
+
+/* -----***** offer css ends *****----- */
+
+/* -----***** footer css starts *****----- */
+#footer-bg {
+  background: #0b001b;
+}
+
+#footer-bg .item h4 {
+  font-size: 18px;
+  line-height: 40px;
+  color: white;
+  font-family: var(--open-Sans);
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+#footer-bg .item p {
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+  font-family: var(--open-Sans);
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+#footer-bg .item ul {
+  display: flex;
+  padding-left: 0 !important;
+}
+
+#footer-bg .item ul li {
+  width: 40px;
+  height: 40px;
+  background: var(--brandcolor);
+  margin-right: 15px;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* -----***** footer css ends *****----- */

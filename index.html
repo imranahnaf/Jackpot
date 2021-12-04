@@ -1,239 +1,437 @@
-<!DOCTYPE html>
-<html lang="en">
+   <!DOCTYPE html>
+   <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>jackpot</title>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
-		rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-</head>
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>jackpot</title>
+       <link
+           href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+           rel="stylesheet">
+       <link href="css/bootstrap.min.css" rel="stylesheet">
+       <link href="css/font-awesome.min.css" rel="stylesheet">
+       <link href="css/animate.min.css" rel="stylesheet">
+       <link href="css/style.css" rel="stylesheet">
+   </head>
 
-<body>
-	<!-- ======== *****navbar html starts***** ======== -->
-	<nav class="navbar navbar-expand-lg navbar-light text-white">
-		<div class="container nav-content">
-			<a class="navbar-brand py-0 position-absolute" href="#">
-				<img src="images/logo.png" alt="logo">
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon">
-				</span>
-			</button>
-			<div class="nav-items collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link active text-white" href="#">about</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-white" href="#">about us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-white" href="#">games</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-white" href="#">pricing</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-white" href="#">FAQ</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link signup" href="#">signup</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link login" href="#">login</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- ======== *****navbar html ends***** ======== -->
+   <body>
 
-
-	<!-- ======== *****banner html starts***** ======== -->
-	<section id="banner-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5">
-					<div class="banner-img">
-						<img class="w-100" src="images/banner-img.png" alt="banner-img">
-					</div>
-				</div>
-				<div class="col-lg-1"></div>
-				<div class="banner-details col-lg-5 align-items-end">
-					<div class="banner-text">
-						<h4>today's jackpot</h4>
-						<p class="banner-777">777</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-							incididunt ut
-							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-						<a href="#">play now</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- ======== *****counter html starts***** ======== -->
-
-			<div class="container" id="counter-content">
-				<div class="col-lg-12">
-					<div class="counter-item d-flex">
-						<div class="col-lg-4">
-							<div class="item item-1">
-								<h6>01</h6>
-								<p>register</p>
-								<p>Download the app and signup for account</p>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="item item-2">
-								<h6>02</h6>
-								<p>get ready</p>
-								<p>Download the app and signup for account</p>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="item item-3">
-								<h6>03</h6>
-								<p>enjoy</p>
-								<p>Download the app and signup for account</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</section>
-	<!-- ======== *****counter html ends***** ======== -->
-	</section>
-	<!-- ======== *****banner html ends***** ======== -->
+       <!-- ======== *****navbar html starts***** ======== -->
+       <nav class="navbar navbar-expand-lg navbar-light text-white">
+           <div class="container nav-content">
+               <a class="navbar-brand py-0 position-absolute" href="#">
+                   <img src="images/logo.png" alt="logo">
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                   aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon">
+                   </span>
+               </button>
+               <div class="nav-items collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                       <li class="nav-item">
+                           <a class="nav-link active text-white" href="#">about</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link text-white" href="#">about us</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link text-white" href="#">games</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link text-white" href="#">pricing</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link text-white" href="#">FAQ</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link signup" href="#">signup</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link login" href="#">login</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+       <!-- ======== *****navbar html ends***** ======== -->
 
 
-	<!-- ======== *****games html starts***** ======== -->
-	<section id="games-bg">
-		<div class="container games-content">
-			<div class="row">
-				<div class="col-lg-4 m-auto">
-					<div class="games-heading">
-						<h4>related games</h4>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="games-img d-flex col-lg-12">
-					<div class="item col-lg-4 col-md-4">
-						<img src="images/games img1.png" alt="games img 1">
-						<div class="overlay">
-							<div class="text">
-								<p>casino game</p>
-								<a href="#">play now</a>
-							</div>
-						</div>
-					</div>
-					<div class="item col-lg-4 col-md-4">
-						<img src="images/games img2.png" alt="games img 1">
-						<div class="overlay">
-							<div class="text">
-								<p>casino game</p>
-								<a href="#">play now</a>
-							</div>
-						</div>
-					</div>
-					<div class="item col-lg-4">
-						<img src="images/games img3.png" alt="games img 1">
-						<div class="overlay">
-							<div class="text">
-								<p>casino game</p>
-								<a href="#">play now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ======== *****games html ends***** ======== -->
+       <!-- ======== *****banner html starts***** ======== -->
+       <section id="banner-bg">
+           <div class="container">
+               <div class="row">
+                   <div class="col-lg-5">
+                       <div class="banner-img">
+                           <img class="w-100" src="images/banner-img.png" alt="banner-img">
+                       </div>
+                   </div>
+                   <div class="col-lg-1"></div>
+                   <div class="banner-details col-lg-5 align-items-end">
+                       <div class="banner-text">
+                           <h4>today's jackpot</h4>
+                           <p class="banner-777">777</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                               incididunt ut
+                               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                           <a href="#">play now</a>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- ======== *****counter html starts***** ======== -->
+               <div class="container" id="counter-content">
+                   <div class="col-lg-12">
+                       <div class="counter-item d-flex">
+                           <div class="col-lg-4">
+                               <div class="item item-1">
+                                   <h6>01</h6>
+                                   <p>register</p>
+                                   <p>Download the app and signup for account</p>
+                               </div>
+                           </div>
+                           <div class="col-lg-4">
+                               <div class="item item-2">
+                                   <h6>02</h6>
+                                   <p>get ready</p>
+                                   <p>Download the app and signup for account</p>
+                               </div>
+                           </div>
+                           <div class="col-lg-4">
+                               <div class="item item-3">
+                                   <h6>03</h6>
+                                   <p>enjoy</p>
+                                   <p>Download the app and signup for account</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- ======== *****counter html ends***** ======== -->
+           </div>
+       </section>
+       <!-- ======== *****banner html ends***** ======== -->
 
 
-	<!-- ======== *****unlock games html starts***** ======== -->
-	<section id="games-about">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5">
-					<div class="games-about-img ">
-						<img class="w-100" src="images/item-4.png" alt="games about img">
-					</div>
-				</div>
-				<div class="col-lg-1"></div>
-				<div class="col-lg-6">
-					<div class="about-games-text">
-						<h4>Unlock Free Spin</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-						<p>Excepteur sint occaecat cupidatat non proident, sunt inrunt mollit anim id est laborum. Sed
-							ut perspiciatis unde omnis iste.</p>
-						<a href="#">claim now</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ======== *****unlock games html starts***** ======== -->
+       <!-- ======== *****games html starts***** ======== -->
+       <section id="games-bg">
+           <div class="container games-content">
+               <div class="row">
+                   <div class="col-lg-4 m-auto">
+                       <div class="games-heading">
+                           <h4>related games</h4>
+                       </div>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="games-img d-flex col-lg-12">
+                       <div class="item col-lg-4 col-md-4">
+                           <img src="images/games img1.png" alt="games img 1">
+                           <div class="overlay">
+                               <div class="text">
+                                   <p>casino game</p>
+                                   <a href="#">play now</a>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="item col-lg-4 col-md-4">
+                           <img src="images/games img2.png" alt="games img 1">
+                           <div class="overlay">
+                               <div class="text">
+                                   <p>casino game</p>
+                                   <a href="#">play now</a>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="item col-lg-4">
+                           <img src="images/games img3.png" alt="games img 1">
+                           <div class="overlay">
+                               <div class="text">
+                                   <p>casino game</p>
+                                   <a href="#">play now</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- ======== *****games html ends***** ======== -->
 
 
-	<!-- ======== *****praicing plan html starts***** ======== -->
-	<section id="pricing-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 m-auto">
-					<div class="pricing-head">
-						<h4>our pricing plan</h4>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="pricing-item d-flex">
-					<div class="item col-lg-4">
-						<div class="box-head w-100">
-							<h5>featured</h5>
-						</div>
-						<div class="price">
-							<h4>trial plan</h4>
-							<p>0.00</p>
-							<p>usd/month</p>
-						</div>
-						<div class="price-details">
-							<p>Editable Game Timer</p>
-							<p>Upto 10 Plyers at a Time</p>
-							<p>Etitable Score Averaging</p>
-							<p>Printable Result Page</p>
-							<p>x</p>
-							<p>x</p>
-							<div class="box-footer">
-								<a href="#">choose now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ======== *****praicing plan html ends***** ======== -->
+       <!-- ======== *****unlock games html starts***** ======== -->
+       <section id="games-about">
+           <div class="container">
+               <div class="row">
+                   <div class="col-lg-5">
+                       <div class="games-about-img ">
+                           <img class="w-100" src="images/item-4.png" alt="games about img">
+                       </div>
+                   </div>
+                   <div class="col-lg-1"></div>
+                   <div class="col-lg-6">
+                       <div class="about-games-text">
+                           <h4>Unlock Free Spin</h4>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                               ut
+                               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                               laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                           </p>
+                           <p>Excepteur sint occaecat cupidatat non proident, sunt inrunt mollit anim id est laborum.
+                               Sed
+                               ut perspiciatis unde omnis iste.</p>
+                           <a href="#">claim now</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- ======== *****unlock games html starts***** ======== -->
+
+
+       <!-- ======== *****praicing plan html starts***** ======== -->
+       <section id="pricing-bg">
+           <div class="container">
+               <div class="row">
+                   <div class="col-lg-4 m-auto">
+                       <div class="pricing-head">
+                           <h4>our pricing plan</h4>
+                       </div>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="pricing-item d-flex">
+                       <div class="item item-1 col-lg- animate__animated animate__backInLeft animate__delay-1s wow">
+                           <div class="box-head w-100">
+                               <h5>featured</h5>
+                           </div>
+                           <div class="price">
+                               <h4>trial plan</h4>
+                               <p>0.00</p>
+                               <p>usd/month</p>
+                           </div>
+                           <div class="price-details">
+                               <p>Editable Game Timer</p>
+                               <p>Upto 10 Plyers at a Time</p>
+                               <p>Etitable Score Averaging</p>
+                               <p>Printable Result Page</p>
+                               <p>x</p>
+                               <p>x</p>
+                               <div class="box-footer">
+                                   <a href="#">choose now</a>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="item item-2 col-lg-4 animate__animated animate__fadeIn animate__delay-1s wow">
+                           <div class="box-head w-100">
+                               <h5>featured</h5>
+                           </div>
+                           <div class="price">
+                               <h4>standerd plan</h4>
+                               <p>9.99</p>
+                               <p>usd/month</p>
+                           </div>
+                           <div class="price-details">
+                               <p>Editable Game Timer</p>
+                               <p>Upto 10 Plyers at a Time</p>
+                               <p>Etitable Score Averaging</p>
+                               <p>Printable Result Page</p>
+                               <p>x</p>
+                               <p>x</p>
+                               <div class="box-footer">
+                                   <a href="#">choose now</a>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="item item-3 col-lg-4 animate__animated animate__backInRight animate__delay-1s wow">
+                           <div class="box-head w-100">
+                               <h5>featured</h5>
+                           </div>
+                           <div class="price">
+                               <h4>platinum plan</h4>
+                               <p>99.99</p>
+                               <p>usd/month</p>
+                           </div>
+                           <div class="price-details">
+                               <p>Editable Game Timer</p>
+                               <p>Upto 10 Plyers at a Time</p>
+                               <p>Etitable Score Averaging</p>
+                               <p>Printable Result Page</p>
+                               <p>x</p>
+                               <p>x</p>
+                               <div class="box-footer">
+                                   <a href="#">choose now</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- ======== *****praicing plan html ends***** ======== -->
+
+
+       <!-- ======== *****routine plan html starts***** ======== -->
+       <section id="routine-bg">
+           <div class="container">
+               <div class="routine-item col-lg-12">
+                   <div class="row">
+                       <div class="item col-lg-7">
+                           <div class="routine-head">
+                               <h4>Frequently Ask Questions</h4>
+                           </div>
+
+                           <div class="box-item item1">
+                               <label for="label">01. How can play these games (for begineer)?
+                                   <ul>
+                                       <li class="sub-item1"><i class="fa fa-sort-down"></i>
+                                       </li>
+                                   </ul>
+                               </label>
+                               <p class="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                   eiusmod tempor incnt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                   consequat.</p>
+                           </div>
+
+                           <div class="box-item item2">
+                               <label for="label">02. How can play these games (for begineer)?
+                                   <ul>
+                                       <li class="sub-item2"><i class="fa fa-sort-down"></i>
+                                       </li>
+                                   </ul>
+                               </label>
+                               <p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                   eiusmod tempor incnt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                   consequat.</p>
+                           </div>
+
+                           <div class="box-item item3">
+                               <label for="label">03. How can play these games (for begineer)?
+                                   <ul>
+                                       <li class="sub-item3"><i class="fa fa-sort-down"></i>
+                                       </li>
+                                   </ul>
+                               </label>
+                               <p class="para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                   eiusmod tempor incnt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                   consequat.</p>
+                           </div>
+
+                           <div class="box-item item4">
+                               <label for="label">04. How can play these games (for begineer)?
+                                   <ul>
+                                       <li class="sub-item4"><i class="fa fa-sort-down"></i>
+                                       </li>
+                                   </ul>
+                               </label>
+                               <p class="para4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                   eiusmod tempor incnt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                   consequat.</p>
+                           </div>
+                       </div>
+                       <div class="item col-lg-5">
+                           <div class="row">
+                               <div class="routine-head">
+                                   <h4>Today’s Tournaments</h4>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="sub-head">
+                                   <div class="col-lg-2"></div>
+                                   <div class="col-lg-3">
+                                       <ul>
+                                           <li></li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- ======== *****routine plan html ends***** ======== -->
+
+
+       <!-- ======== *****offer html starts***** ======== -->
+       <section id="offer-bg">
+           <div class="container">
+               <div class="row">
+                   <div class="offer-item d-flex">
+                       <div class="col-lg-6">
+                           <div class="row">
+                               <h4>subscribe for of</h4>
+                               <form action="#" method="post">
+                                   <input class="col-lg-6" type="mail" placeholder="Your email here">
+                                   <button type="submit"><i class="fa fa-send"></i></button>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- ======== *****offer html ends***** ======== -->
+
+
+       <!-- ======== *****footer html starts***** ======== -->
+       <section id="footer-bg">
+           <div class="container">
+               <div class="row">
+                   <div class="item col-lg-4">
+                       <h4>about jackpot</h4>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                           labore et dolore
+                           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco .</p>
+                       <ul>
+                           <li>
+                               <a href="#">
+                                   <i class="fa fa-facebook-f"></i>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#">
+                                   <i class="fa fa-twitter"></i>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#">
+                                   <i class="fa fa-google-plus"></i>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#">
+                                   <i class="fa fa-whatsapp"></i>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="item col-lg-2"></div>
+                   <div class="item col-lg-2"></div>
+               </div>
+               <div class="row">
+                   <div class="col-lg-4 m-auto">
+                       <h4>&copy;2018. All rights reserved by Designer</h4>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- ======== *****footer html ends***** ======== -->
 
 
 
 
 
+       <script src="js/jquery-2.2.4.min.js"></script>
+       <script src="js/bootstrap.bundle.js"></script>
+       <script src="js/wow.min.js"></script>
+       <script src="js/costom.js"></script>
+   </body>
 
-	<script src="js/jquery-2.2.4.min.js"></script>
-	<script src="js/bootstrap.bundle.js"></script>
-	<script src="js/costom.js"></script>
-</body>
-
-</html>
+   </html>

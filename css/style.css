@@ -595,7 +595,6 @@ body {
 }
 /* -----***** praicing plan css ends *****----- */
 
-
 /* -----***** routine-bg  css starts *****----- */
 #routine-bg {
   background: var(--bgcolor);
@@ -631,28 +630,34 @@ body {
 }
 
 #routine-bg .item .box-item {
-  margin-top: 20px;
   transition: all linear 0.4s;
   -webkit-transition: all linear 0.4s;
   -moz-transition: all linear 0.4s;
   -ms-transition: all linear 0.4s;
   -o-transition: all linear 0.4s;
-  padding-top: 20px;
-  border: 1px solid white;
-  border: none;
+  padding: 20px 0;
+  border: 1px solid var(--bgcolor);
 }
 
 #routine-bg .item .box-item:hover {
   border: 1px solid var(--h1color);
 }
 
-#routine-bg .item .box-item label {
+#routine-bg .item .box-item .sub-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#routine-bg .item .box-item .sub-box i {
+  color: white;
+  padding-right: 40px;
+}
+
+#routine-bg .item .box-item .sub-box label {
   color: white;
   font-size: 18px;
   font-family: var(--open-sans);
   font-weight: 400;
-  display: flex;
-  justify-content: space-between;
   padding: 0 20px 0 20px;
 }
 
@@ -661,16 +666,88 @@ body {
   font-size: 18px;
   font-family: var(--open-sans);
   font-weight: 400;
-  padding: 0 40px 0 20px;
+  padding: 20px 40px 0px 20px;
+  margin-bottom: 0 !important;
+}
+
+#routine-bg .item .counter-box ul {
+  display: flex;
+}
+
+#routine-bg .item .counter-box p {
+  color: white;
+  font-size: 16px;
+  font-family: var(--open-sans);
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+#routine-bg .item .counter-box ul li {
+  width: 70px;
+  height: 70px;
+  border: 1px solid var(--h1color);
+  border-radius: 5px;
+  margin-right: 25px;
+  text-align: center;
+  align-items: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#routine-bg .item .counter-box ul li:last-of-type {
+  margin-right: 0;
+}
+
+#routine-bg .item .counter-box ul li p {
+  margin-bottom: 0 !important;
+  color: var(--h1color);
+  font-size: 20px;
+  font-family: var(--open-sans);
+  font-weight: 600;
+  line-height: 26px;
+  padding-top: 8px;
+}
+
+#routine-bg .item .counter-box ul li h4 {
+  margin-bottom: 0 !important;
+  color: var(--h1color);
+  font-size: 20px;
+  font-family: var(--open-sans);
+  font-weight: 600;
+  line-height: 26px;
+}
+
+#routine-bg .item .routine ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 10px;
+}
+
+#routine-bg .item .routine ul li {
+  color: white;
+  font-size: 16px;
+  font-family: var(--open-Sans);
+  font-weight: 400;
+  width: 24%;
+  text-align: center;
+}
+
+#routine-bg .item .routine ul li:first-of-type {
+  text-align-last: left;
 }
 
 /* -----***** routine-bg  css ends *****----- */
 
 /* -----***** offer css starts *****----- */
 #offer-bg {
-  background: linear-gradient(#9748f7, #8032e6);
-  padding-top: 80px;
-  padding-bottom: 80px;
+  background: linear-gradient(#965cf5, #721fd8);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-shadow: 0px 6px rgba(95, 20, 206);
 }
 
 #offer-bg .offer-item h4 {
@@ -678,31 +755,28 @@ body {
   line-height: 40px;
   color: white;
   font-family: var(--anton);
-  font-weight: 700;
+  font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 0;
 }
 
+#offer-bg .offer-item form {
+  display: flex;
+}
+
 #offer-bg .offer-item form input {
-  border: none;
   border: 1px solid #353535;
   background: transparent;
-}
-
-#offer-bg .offer-item form {
-  white-space: none;
-}
-
-#offer-bg .offer-item form input {
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 0px 5px 10px;
+  width: 90%;
+  margin-top: 10px;
 }
 
 #offer-bg .offer-item form button {
   border: none;
   border: 1px solid #353535;
   background: transparent;
+  margin-top: 10px;
 }
 
 #offer-bg .offer-item form button i {
@@ -711,46 +785,140 @@ body {
   color: #353535;
 }
 
+#offer-bg .offer-item .payment ul {
+  display: flex;
+  padding-left: 0;
+}
+
+#offer-bg .offer-item .payment ul li {
+  margin-right: 10px;
+}
+
 /* -----***** offer css ends *****----- */
 
 /* -----***** footer css starts *****----- */
 #footer-bg {
   background: #0b001b;
+  padding-top: 40px;
+  position: relative;
+}
+
+#footer-bg::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: var(--brandcolor);
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  /* bottom border line */
+}
+
+#footer-bg .item .item-text {
+  padding-top: 35px;
+  padding-bottom: 40px;
 }
 
 #footer-bg .item h4 {
-  font-size: 18px;
+  font-size: 32px;
   line-height: 40px;
   color: white;
-  font-family: var(--open-Sans);
-  font-weight: 700;
+  font-family: var(--anton);
+  font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 0;
 }
 
-#footer-bg .item p {
+#footer-bg .item-1 p {
   font-size: 16px;
   line-height: 26px;
   color: white;
   font-family: var(--open-Sans);
-  font-weight: 700;
+  font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 0;
   padding-top: 10px;
 }
 
-#footer-bg .item ul {
+#footer-bg .item-1 ul {
   display: flex;
   padding-left: 0 !important;
+  margin-top: 40px;
 }
 
-#footer-bg .item ul li {
+#footer-bg .item-1 ul li {
   width: 40px;
   height: 40px;
   background: var(--brandcolor);
   margin-right: 15px;
   text-align: center;
   line-height: 40px;
+  font-size: 24px;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+
+#footer-bg .item-1 ul li:hover {
+  background: var(--hovercolor);
+}
+
+#footer-bg .item-1 ul li a {
+  color: white;
+}
+
+#footer-bg .item-2 .item2-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-bg .item-2 .item2-text ul {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#footer-bg .item-2 .item2-text ul li a {
+  font-size: 16px;
+  line-height: 40px;
+  color: white;
+  font-family: var(--open-Sans);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#footer-bg .item-4 .item4-text ul {
+  display: flex;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#footer-bg .item-4 .item4-text ul:first-of-type {
+  margin-bottom: 30px !important;
+}
+
+#footer-bg .item-4 .item4-text ul li p {
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+  font-family: var(--open-Sans);
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  padding-top: 12px;
+  padding-left: 40px;
+}
+
+#footer-bg .footer-copy h4 {
+  font-size: 16px;
+  line-height: 50px;
+  color: white;
+  font-family: var(--open-Sans);
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  padding: 25px 0;
 }
 
 /* -----***** footer css ends *****----- */

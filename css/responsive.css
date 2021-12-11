@@ -1,3 +1,49 @@
-@media (max-width: 575px){
-    
+/* ======== *****extra small device responsive starts***** ======== */
+@media (max-width: 575px) {
+  .navbar {
+    position: relative;
+  }
+
+  .navbar .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    background: #f1f1f1;
+    padding: 0 !important;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+  }
+
+  .navbar .navbar-nav .nav-item:hover {
+    background: #000;
+  }
+
+  .navbar .navbar-nav .nav-item .signup {
+    margin-left: 0 !important;
+  }
+
+  .navbar .navbar-nav .nav-item .login {
+    margin-left: 0 !important;
+  }
+  /* navbar complete */
+
+  #banner-bg .counter-item {
+    flex: none !important;
+  }
+
+  /* banner complete */
+
+  /* counting starts */
+  #banner-bg .counter-item {
+    clip-path: polygon(0 12%, 0% 0%, 0% 0%, 0% 0%);
+  }
+  /* counting ends */
+
+  /* ======== *****extra small device responsive ends***** ======== */
 }

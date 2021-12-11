@@ -45,10 +45,6 @@ body {
   background: cover;
 }
 
-.navbar .navbar-nav:first-of-type {
-  padding-left: 170px;
-}
-
 .navbar .navbar-nav .nav-item {
   padding-top: 60px;
   align-items: center;
@@ -61,7 +57,7 @@ body {
   font-weight: 400;
   text-transform: capitalize;
   line-height: 50px;
-  padding-right: 50px;
+  padding-right: 40px;
   transition: all linear 0.4s;
   -webkit-transition: all linear 0.4s;
   -moz-transition: all linear 0.4s;
@@ -140,6 +136,16 @@ body {
   border: 2px solid purple;
 }
 
+.navbar .navbar-toggler {
+  border-color: white !important;
+  background: white;
+  margin-top: 40px;
+}
+
+.navbar .navbar-toggler span i {
+  padding-top: 6px;
+}
+
 /* -----***** navbar css ends *****----- */
 
 /* -----***** banner css starts *****----- */
@@ -148,8 +154,8 @@ body {
   align-items: center;
   padding-top: 45px;
   background: #150035;
-  padding-bottom: 240px;
-  position: relative;
+  margin-bottom: 130px;
+  padding-bottom: 230px;
 }
 
 #banner-bg .banner-text h4 {
@@ -212,43 +218,42 @@ body {
 
 /* -----***** banner css ends *****----- */
 
-/* -----***** counter css starts *****----- */
+/* -----***** counting css starts *****----- */
 
-#counter-content {
-  position: absolute;
-  bottom: -130px;
+#banner-bg .banner-content {
+  position: relative;
 }
 
-#counter-content .counter-item {
+#banner-bg .counter-item {
   background: #6619d2;
   text-align: center;
   -webkit-clip-path: polygon(0 12%, 100% 1%, 100% 100%, 0% 100%);
   clip-path: polygon(0 12%, 100% 1%, 100% 100%, 0% 100%);
+  margin-top: 60px;
+  position: absolute;
+  bottom: -330px;
+  left: 0;
 }
 
-#counter-content .counter-item .item {
-  text-align: center;
+#banner-bg .counter-item .item-2 {
+  box-shadow: 5px 0px 25px #000000 inset;
 }
 
-#counter-content .item-1 {
-  box-shadow: 5px 5px 25px 5px #000000;
+#banner-bg .counter-item .item-3 {
+  box-shadow: 5px 0px 20px 0px #000000 inset;
 }
 
-#counter-content .item-2 {
-  box-shadow: 5px 5px 25px 5px #000000;
-}
-
-#counter-content .counter-item h6 {
+#banner-bg .counter-item h6 {
   color: #fcb100;
   font-size: 50px;
   font-family: var(--oswald);
   font-weight: 600;
   line-height: 50px;
   margin-bottom: 0 !important;
-  padding-top: 90px;
+  padding-top: 70px;
 }
 
-#counter-content .counter-item .item p {
+#banner-bg .counter-item .item p {
   color: white;
   font-size: 50px;
   font-family: var(--oswald);
@@ -256,10 +261,10 @@ body {
   text-transform: capitalize;
   line-height: 32px;
   margin-bottom: 0 !important;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
-#counter-content .counter-item p:last-of-type {
+#banner-bg .counter-item p:last-of-type {
   font-size: 16px;
   font-family: var(--nunito);
   font-weight: 400;
@@ -268,12 +273,11 @@ body {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-
-/* -----***** counter css ends *****----- */
+/* -----***** counting css ends *****----- */
 
 /* -----***** games css starts *****----- */
 #games-bg {
-  padding-top: 200px;
+  padding-top: 20px;
 }
 
 #games-bg .games-heading {

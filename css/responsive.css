@@ -234,7 +234,7 @@
   }
 
   #routine-bg .item .counter-box ul {
-    padding-left: 100px !important;
+    padding-left: 80px !important;
   }
 
   #routine-bg .item .counter-box ul li {
@@ -269,6 +269,10 @@
   /* offer starts */
   #offer-bg .offer-item:last-child {
     padding-top: 20px !important;
+  }
+
+  #offer-bg .offer-item .payment ul li {
+    margin-right: 5px !important;
   }
   /* offer ends */
 

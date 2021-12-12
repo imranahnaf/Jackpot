@@ -233,9 +233,8 @@
     margin-bottom: 20px !important;
   }
 
-  #routine-bg .item .counter-box {
-    display: flex;
-    justify-content: space-between;
+  #routine-bg .item .counter-box ul {
+    padding-left: 100px !important;
   }
 
   #routine-bg .item .counter-box ul li {
@@ -541,9 +540,8 @@
     margin-bottom: 20px !important;
   }
 
-  #routine-bg .item .counter-box {
-    display: flex;
-    justify-content: space-between;
+  #routine-bg .item .counter-box ul {
+    padding-left: 50px !important;
   }
 
   #routine-bg .item .counter-box ul li {

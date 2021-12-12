@@ -39,10 +39,15 @@ body {
 .navbar {
   z-index: 9999999999;
   background: var(--bgcolor);
+  justify-content: space-between;
 }
 
 .navbar .navbar-brand img {
   background: cover;
+}
+
+.navbar .navbar-nav {
+  padding-left: 170px;
 }
 
 .navbar .navbar-nav .nav-item {
@@ -57,7 +62,8 @@ body {
   font-weight: 400;
   text-transform: capitalize;
   line-height: 50px;
-  padding-right: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
   transition: all linear 0.4s;
   -webkit-transition: all linear 0.4s;
   -moz-transition: all linear 0.4s;
@@ -450,7 +456,6 @@ body {
   font-family: var(--anton);
   font-weight: 400;
   text-transform: capitalize;
-  margin-bottom: 0;
   margin-bottom: 115px;
   text-align: center;
 }
@@ -501,8 +506,7 @@ body {
   font-weight: 500;
   text-transform: capitalize;
   color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 
 #pricing-bg .pricing-item .item .price {
@@ -536,7 +540,6 @@ body {
   font-family: var(--open-Sans);
   font-weight: 400;
   text-transform: capitalize;
-  margin-bottom: 0;
   margin-bottom: 40px;
   position: relative;
 }

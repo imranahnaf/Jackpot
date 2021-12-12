@@ -63,6 +63,10 @@
     flex: none !important;
   }
 
+  #banner-bg .banner-text {
+    text-align: center !important;
+  }
+
   #banner-bg .banner-text .banner-777 {
     font-size: 180px !important;
     padding-top: 110px !important;
@@ -928,3 +932,42 @@
   /* footer ends */
 }
 /* ======== *****medium device responsive ends***** ======== */
+
+/* ======== *****large device responsive starts***** ======== */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar .navbar-nav {
+    padding-left: 0px !important;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 !important;
+    padding-left: 19px !important;
+    padding-right: 19px !important;
+  }
+
+  #banner-bg .banner-text .banner-777 {
+    font-size: 310px !important;
+  }
+
+  #pricing-bg .pricing-head h4 {
+    font-size: 44px !important;
+  }
+
+  #pricing-bg .pricing-item .item .box-footer {
+    bottom: -20px !important;
+    width: 180px !important;
+  }
+
+  #routine-bg .item .routine ul li:first-of-type {
+    width: 50% !important;
+  }
+
+  #routine-bg .item .routine ul li:nth-of-type(2) {
+    width: 20% !important;
+  }
+
+  #routine-bg .item .routine ul li:last-of-type {
+    width: 30% !important;
+  }
+}
+/* ======== *****large device responsive ends***** ======== */

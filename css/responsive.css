@@ -54,6 +54,7 @@
   }
   /* navbar complete */
 
+  /* banner starts */
   #banner-bg {
     margin-bottom: 80px !important;
   }
@@ -310,6 +311,7 @@
 
 /* ======== *****small device responsive starts***** ======== */
 @media (min-width: 576px) and (max-width: 767px) {
+  /* navbar starts */
   .navbar .navar-brand {
     width: 100px !important;
   }
@@ -612,5 +614,317 @@
   }
   /* footer ends */
 }
-
 /* ======== *****small device responsive ends***** ======== */
+
+/* ======== *****medium device responsive starts***** ======== */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* navbar starts */
+  .navbar .navar-brand {
+    width: 100px !important;
+  }
+
+  .navbar .navbar-nav {
+    text-align: center !important;
+    padding-left: 0 !important;
+    position: absolute !important;
+    left: 0 !important;
+    background: #000 !important;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    background: #f1f1f1 !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 10px !important;
+    padding: 0 !important;
+    transition: all linear 0.4s !important;
+    -webkit-transition: all linear 0.4s !important;
+    -moz-transition: all linear 0.4s !important;
+    -ms-transition: all linear 0.4s !important;
+    -o-transition: all linear 0.4s !important;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 !important;
+  }
+
+  .navbar .navbar-nav .nav-item:hover {
+    background: #000 !important;
+  }
+
+  .navbar .navbar-nav .nav-item .signup {
+    margin-left: 0 !important;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+    box-shadow: none !important;
+  }
+
+  .navbar .navbar-nav .nav-item .login {
+    margin-left: 0 !important;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+    box-shadow: none !important;
+  }
+  /* navbar complete */
+
+  /* banner starts */
+  #banner-bg {
+    margin-bottom: 80px !important;
+    padding-bottom: 220px !important;
+  }
+
+  #banner-bg .medium-none {
+    display: none;
+  }
+
+  #banner-bg .counter-item {
+    flex: none !important;
+  }
+
+  #banner-bg .banner-text .banner-777 {
+    font-size: 220px !important;
+    padding-top: 70px !important;
+  }
+
+  #banner-bg .banner-text p {
+    padding-top: 60px !important;
+  }
+
+  /* banner complete */
+
+  /* counting starts */
+  #banner-bg .counter-item {
+    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%) !important;
+  }
+
+  #banner-bg .counter-item {
+    bottom: -280px !important;
+  }
+
+  #banner-bg .counter-item .item-3 {
+    box-shadow: none !important;
+  }
+
+  #banner-bg .counter-item h6 {
+    color: #fcb100;
+    font-size: 40px !important;
+    padding-top: 50px !important;
+  }
+
+  #banner-bg .counter-item .item p {
+    font-size: 35px !important;
+    margin-bottom: 0 !important;
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  #banner-bg .counter-item p:last-of-type {
+    font-size: 16px !important;
+    line-height: 25px !important;
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
+  }
+  /* counting ends */
+
+  /* games start */
+  #games-bg .games-heading h4 {
+    font-size: 40px !important;
+  }
+
+  #games-bg .games-img .item {
+    margin-top: 50px !important;
+  }
+
+  #games-bg .games-img .overlay {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  #games-bg .games-img .overlay .text p {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  #games-bg .games-img .overlay .text a {
+    padding: 5px 15px !important;
+    font-size: 18px !important;
+  }
+  /* games ends */
+
+  /* unloking games starts */
+
+  #games-about {
+    margin-top: 70px !important;
+    margin-bottom: 50px !important;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background: var(--bgcolor) !important;
+  }
+
+  #games-about .about-games-text p {
+    padding-top: 20px !important;
+  }
+
+  /* unloking games ends */
+
+  /* pricing starts */
+  #pricing-bg .pricing-head h4 {
+    font-size: 40px !important;
+    margin-bottom: 70px !important;
+  }
+
+  #pricing-bg .pricing-item .item .box-head {
+    top: -40px !important;
+    visibility: visible !important;
+    opacity: 2 !important;
+  }
+
+  #pricing-bg .pricing-item .item .box-head h5 {
+    font-size: 22px !important;
+    line-height: 25px !important;
+    padding: 8px 0px !important;
+  }
+
+  #pricing-bg .pricing-item .item .price {
+    padding-top: 30px !important;
+  }
+
+  #pricing-bg .pricing-item .item .price h4 {
+    font-size: 24px !important;
+    line-height: 25px !important;
+    margin-bottom: 10px !important;
+  }
+
+  #pricing-bg .pricing-item .item .price p:first-of-type {
+    font-size: 32px !important;
+  }
+
+  #pricing-bg .pricing-item .item .price p:last-of-type {
+    margin-bottom: 0px !important;
+  }
+
+  #pricing-bg .pricing-item .item .price p:last-of-type::after {
+    top: 40px !important;
+  }
+
+  #pricing-bg .pricing-item .item .price-details {
+    padding-bottom: 25px !important;
+    padding-top: 10px !important;
+  }
+
+  #pricing-bg .pricing-item .item .price-details p {
+    line-height: 25px !important;
+  }
+
+  #pricing-bg .pricing-item .item .box-footer {
+    bottom: -20px !important;
+    width: 130px !important;
+  }
+
+  #pricing-bg .pricing-item .item .box-footer a {
+    font-size: 16px !important;
+    padding: 5px 15px !important;
+
+    display: inline-block;
+  }
+
+  /* pricing ends */
+
+  /* routine starts */
+  #routine-bg {
+    margin-top: 70px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  #routine-bg .routine-item .item .routine-head:after {
+    top: 50px !important;
+  }
+
+  #routine-bg .routine-item .item .routine-head h4 {
+    padding-bottom: 30px !important;
+  }
+
+  #routine-bg .routine-item .item:last-child {
+    padding-top: 20px !important;
+  }
+
+  #routine-bg .item .box-item:last-child {
+    margin-bottom: 20px !important;
+  }
+
+  #routine-bg .item .counter-box ul {
+    padding-left: 280px !important;
+  }
+
+  #routine-bg .item .counter-box ul li {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 15px !important;
+  }
+
+  #routine-bg .item .counter-box ul li p {
+    padding-top: 3px !important;
+  }
+
+  #routine-bg .item .counter-box ul li h4 {
+    font-size: 14px !important;
+    line-height: 10px !important;
+  }
+
+  #routine-bg .item .routine ul li:first-of-type {
+    width: 50% !important;
+  }
+
+  #routine-bg .item .routine ul li:nth-of-type(2) {
+    width: 20% !important;
+  }
+
+  #routine-bg .item .routine ul li:last-of-type {
+    width: 30% !important;
+  }
+
+  /* routine ends */
+
+  /* offer starts */
+  #offer-bg .offer-item:last-child {
+    padding-top: 20px !important;
+  }
+  /* offer ends */
+
+  /* footer starts */
+  #footer-bg {
+    padding-top: 30px !important;
+  }
+
+  #footer-bg::after {
+    bottom: 110px !important;
+  }
+
+  #footer-bg .item .item-text {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  #footer-bg .item h4 {
+    font-size: 24px !important;
+  }
+
+  #footer-bg .footer-copy {
+    margin: 0 auto !important;
+    text-align: center !important;
+    line-height: 0 !important;
+    padding: 0 20px !important;
+  }
+  /* footer ends */
+}
+/* ======== *****medium device responsive ends***** ======== */

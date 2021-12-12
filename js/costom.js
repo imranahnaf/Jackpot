@@ -56,10 +56,3 @@ $(document).ready(function () {
     });
 });
 // ****** routine section js ***** //
-
-
-
-
-
-
-
